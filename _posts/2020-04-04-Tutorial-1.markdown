@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Tutorial"
+date:   2020-04-04 13:00:00 +0200
+categories: tutorial
+---
+
+# Tutorial: Scherm van Android smartphone mirroren naar computer
+
+In deze tutorial wil ik je uitleggen hoe je het scherm van je Android smartphone kan tonen op je computer. Onlangs was dit nodig voor mijn collega aangezien die een demo moest geven van onze applicatie en ik heb hem hierbij geholpen.
+
+Waarschijnlijk heb je al gehoord van Vysor, één van de bekendste manieren om je scherm te 'casten'. Alleen zijn er wat drawbacks zoals dat de gratis versie slechte kwaliteit heeft en je niet fullscreen kan gaan. Ook is er het probleem dat je op je toestel een app moet installeren.
+
+Daarom wil ik een alternatief tonen waarbij de kwaliteit degelijk is en waar je niet voor moet betalen: **scrcpy**.
+
+## Benodigdheden
+- Android 5.0 of hoger
+- ADB debugging moet aan staan, zie hiervoor de [handleiding](https://developer.android.com/studio/command-line/adb.html#Enabling).
+
+## Windows
+
+### Stap 1
+Ga naar de [site](https://github.com/Genymobile/scrcpy) van scrcpy en download de ZIP file. Pak deze uit naar een map op je computer.
+
+![Map](/assets/folder.png)
+
+### Stap 2
+Shift + rechts klik en open een Powershell venster (Opdrachtprompt is hetzelfde indien je verkiest).
+
+### Stap 3
+Open je gsm en verbind deze via een USB-kabel met je PC.
+
+Type in het geopende venster:
+```
+.\scrcpy
+```
+
+Normaal krijg je dan volgende error, dit is volledig normaal omdat je nu een melding krijgt op je smartphone dat je toestemming moet geven. Doe dit.
+
+![beeld](/assets/error.png)
+
+### Stap 4
+Voer nu nogmaals het commando hierboven uit. Je krijgt dan de melding dat het gelukt is en je smartphonescherm opent op je PC.
+
+![gelukt](/assets/gelukt.png)
