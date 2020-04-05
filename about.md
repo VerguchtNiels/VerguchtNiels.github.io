@@ -4,4 +4,4 @@ title: Over deze site
 permalink: /over/
 ---
 
-Deze site bevat alle posts omtrent activiteiten gelinkt aan mijn laatste jaar bachelor Toegepaste Informatica: Computer & Cybercrime Profressional.
+Blog/Portfolio voor de module Seminars, Study Visits and Challenges schooljaar 2019-2020. Challenges, conferences, interessante onderwerpen, .. zullen hier samengevat worden in verschillende posts. Veel leesplezier! 
