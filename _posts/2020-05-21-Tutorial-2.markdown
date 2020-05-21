@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Tutorial"
+date:   2020-04-04 13:00:00 +0200
+categories: tutorial spring
+---
+
+# Tutorial: Starten met Spring
+
+In deze tutorial wil ik je tonen hoe de setup van Spring er uitziet. Spring zelf heeft heel veel onderdelen die het mogelijk maken om een robuste applicatie te bouwen in Java, Kotlin of Groovy. 
+
+Het probleem is dat weinig mensen weten hoe je Spring installeert en op internet vind je ook weinig informatie terug. Nochtans is het niet zo moeilijk!
+
+## Benodigdheden
+- Je favoriete IDE
+
+
+## Stap 1
+Ga naar de [start site](https://start.spring.io/) van Spring. Je zal volgend scherm te zien krijgen. Enkele opmerkingen:
+
+*Maven of Gradle?* Maakt niet uit welke je kiest. Maven maakt gebruik van tags en kan voor een bepaald persoon overzichtelijker zijn dan Gradle, sinds Gradle eigenlijk op Java lijkt met alle braces en puntkomma's. Dat kan ook zijn voordeel hebben als je in de code-stijl wil blijven.
+
+*Java, Kotlin of Groovy?* Opnieuw je eigen keuze, maar Java is natuurlijk meer bekend en ondersteund zou ik zeggen. Het doel van Kotlin en Groovy is om het Java leven gemakkelijker te maken en dat mensen sneller kunnen leren. Terwijl dat wel handig en leuk lijkt, meh geef mij maar Java.
+
+*Welke versie?* Liefst zou ik gaan voor een stabiele versie aka zonder **SNAPSHOT** in de naam, tenzij er een bepaalde feature is die je graag wil testen. Vermijd allesinds de snapshot versies als je een applicatie wil bouwen voor productiedoeleinden.
+
+![Overview](/assets/overview.png)
+
+## Stap 2
+In *Group* vul je je domein maar dan reversed. Stel nu dat je een bedrijf 'Techos' hebt met als website 'techos.be', dan vul je **be.techos** hier in. Zit je in een dochterbedrijf van Techos genaamd 'cheetos', dan vul je **be.techos.cheetos** in. You get the point.
+
+## Stap 3
+*Artifact* is de naam van je applicatie, zelfde voor *Name*. *Package name* zal dan de samenstelling zijn van Group en Artifact. Dit zijn naming conventions die moeten gevolgd worden, niet dat ik je iets forceer.
+
+## Stap 4
+*Packaging* maakt hier niet echt uit aangezien Spring meestal voor een webapplicatie wordt gebruikt.
+
+## Stap 5
+Kies de *Java* versie waarmee je wil werken of mee werkt. Vergeet niet dat je versie 11 nodig hebt voor lambda expressies!
+
+## Stap 6
+*Dependencies* is een heel handige sectie. In het geval van een webapplicatie installeer je Spring Web, maar je kan natuurlijk nog zoveel andere packages installeren, zoals Feign, Spring Security, Spring Data JPA, enz..
+
+![Dependencies](/assets/dependencies.png)
+
+## Stap 7
+Exporteer de ZIP, plaats de contents ergens op je pc en open dit in je IDE.
+
+Je hebt nu de basis van een Spring applicatie opgesteld. Op de site van Spring vind je een waslijst aan guides van wat je allemaal kan doen. Succes!
